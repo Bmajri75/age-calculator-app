@@ -1,13 +1,17 @@
 @use "../base/_variables.scss" as *;
 
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
+  @extend %center;
   font-family: var(--font-familly);
   background: var(--neutral-light-grey);
   height: 100vh;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .container {
